@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary meta tags -->
+  <title>McDuck Bank - Your Trusted Financial Partner</title>
+  <meta name="title" content="McDuck Bank - Your Trusted Financial Partner">
+  <meta name="description" content="Welcome to McDuck Bank, where your financial needs are our priority">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+
+</head>
+ 
+<body id="top">
+
+  <!-- Preloader -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Hoffman</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/mcduck-logo.png" width="200" height="100" alt="McDuck Bank - Home">
+      </a>
+      <!-- Navigation -->
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close service" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Uncle Scrooge's Bank - Home">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active" id="nav-home">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link hover-underline" id="nav-services">
+              <div class="separator"></div>
+              <span class="span">Services</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline" id="nav-about">
+              <div class="separator"></div>
+              <span class="span">About Us</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline" id="nav-contact">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+          <address class="body-4">
+            Money Bin St, Duckburg, <br>
+            Calisota 12345, US
+          </address>
+          <p class="body-4 navbar-text">Open: 9 am - 5 pm</p>
+          <a href="mailto:info@mcdbk.com" class="body-4 sidebar-link">info@mcdbk.com</a>
+          <div class="separator"></div>
+          <p class="contact-label">Customer Service</p>
+          <a href="tel:+11234567890" class="body-1 contact-number hover-underline">+1 (123) 456-7890</a>
+        </div>
+      </nav>
+      <a href="./pages/login.html" class="btn btn-secondary" id="btn-login">
+        <span class="text text-1">Login</span>
+        <img src="./assets/images/login-icon.png" width="48" height="48" alt="booking icon">
+        <span class="text text-2" aria-hidden="true">Login</span>
+      </a>
+      <button class="nav-open-btn" aria-label="open service" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+
+      <!-- Hero Section -->
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">History and Financial Security</p>
+            <h1 class="display-1 hero-title slider-reveal">For those who value <br> a trustworthy bank</h1>
+            <p class="body-2 hero-text slider-reveal">Come discover our secure and transparent financial solutions</p>
+          </li>
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Innovation and Financial Trust</p>
+            <h1 class="display-1 hero-title slider-reveal">Where each investment <br> shapes your future</h1>
+            <p class="body-2 hero-text slider-reveal">Join us and discover our innovative financial solutions</p>
+          </li>
+        </ul>
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn id="btn-prev">
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn id="btn-next">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+        <a href="./pages/login.html" class="hero-btn has-after" id="btn-open-account">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+          <span class="label-2 text-center span">Open Your Account</span>
+        </a>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section service bg-black-10 text-center" aria-label="service" id="services">
+        <div class="container">
+          <p class="section-subtitle label-2">Elite Financial Services for Sophisticated Needs</p>
+          <h2 class="headline-1 section-title">We Offer Top-Notch</h2>
+          <p class="section-text">Our services are designed to meet the highest standards of quality and excellence,
+            ensuring that you receive the best banking experience possible. From personalized banking solutions to
+            expert investment advice, we are committed to providing services that exceed your expectations.</p>
+          <ul class="grid-list">
+            <li>
+              <div class="service-card" id="service-personal">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy"
+                      alt="Banking Services" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#" id="card-personal">Personal Banking</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="service-card" id="service-investment">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy"
+                      alt="Investment Services" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#" id="card-investment">Investment Solutions</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="service-card" id="service-credit">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.png" width="285" height="336" loading="lazy"
+                      alt="Credit Card" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#" id="card-credit">Credit Card</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+          <div class="about-content">
+            <p class="label-2 section-subtitle" id="about-label">Our Legacy</p>
+            <h2 class="headline-1 section-title">Each transaction tells a unique story</h2>
+            <p class="section-text">
+              Uncle Scrooge's Bank is dedicated to providing reliable financial services with a touch of heritage and
+              trust.
+            </p>
+            <p class="section-text">
+              Founded by the legendary Uncle Scrooge McDuck in Duckburg, our bank's rich history of perseverance and
+              ingenuity has made it the best in the business. With a foundation built on hard work, smart investments,
+              and unrivaled financial acumen, Uncle Scrooge's Bank stands as a testament to excellence and trust.
+            </p>
+            <p class="section-text">
+              Today, we continue his legacy by offering top-notch banking services that reflect his commitment to
+              security, innovation, and customer-centric solutions. Experience the legacy of the greatest financier in
+              Duckburg history with Uncle Scrooge's Bank.
+            </p>
+            <div class="contact-label">Contact Us</div>
+            <a href="tel:+30123456789" class="body-1 contact-number hover-underline">+30 (123) 456 789</a>
+          </div>
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="" class="w-100">
+            </div>
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-1.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+          </figure>
+          <img src="./assets/images/shape-1.png" width="450" height="450" loading="lazy" alt="" class="shape">
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact bg-blue" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-text">
+            Reach out to us for any inquiries or assistance. Our team is here to help you.
+          </p>
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <p><strong>McDuck Bank</strong></p>
+            <p>123 Duck Street, Duckburg</p>
+            <p>Email: info@mcdbk.com</p>
+            <p>Phone: +1-800-123-4567</p>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2024 McDuck Bank. All Rights Reserved | Crafted by <a href="https://github.com/Samuel-Leite"
+            target="_blank">Samuel Leite</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-top-btn" aria-label="back to top">
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

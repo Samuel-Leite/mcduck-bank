@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/css/login.css" />
+  <title>Sign in & Sign up Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="../assets/images/mcduck-logo-2.png" alt="McDuck Bank Logo" class="logo logo-left" />
+      <img src="../assets/images/mcduck-logo-2.png" alt="McDuck Bank Logo" class="logo logo-right" />
+    </div>
+
+    <div class="forms-container">
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Create your McDuck Bank Account</h3>
+            <p>
+              Welcome to McDuck Bank! Join us today to manage your finances effortlessly and securely.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Already have an account?</h3>
+            <p>
+              Welcome back to McDuck Bank! Log in to securely manage your finances and enjoy our banking services.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Sign in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <input type="submit" value="Login" class="btn solid" />
+        </form>
+        <form action="#" class="sign-up-form">
+          <h2 class="title">Sign up</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-address-card"></i>
+            <input type="text" placeholder="CPF" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Address" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+
+          <label style="color: white;">
+            <input type="checkbox" required />
+            I accept the <a href="#" style="color: white;">terms and conditions</a>.
+          </label>
+
+          <input type="submit" class="btn" value="Sign up" />
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
