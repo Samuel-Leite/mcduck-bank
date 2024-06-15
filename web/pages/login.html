@@ -56,31 +56,32 @@
           <input type="submit" value="Login" class="btn solid" />
           <input type="button" value="Back Home" class="btn solid" onclick="location.href='../index.html';" />
         </form>
-        <form action="#" class="sign-up-form">
+        <form id="sign-up-form" action="http://localhost:3000/auth/signup" method="POST" class="sign-up-form">
           <h2 class="title">Sign up</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
+            <input type="text" id="username" name="username" placeholder="Username" required />
           </div>
           <div class="input-field">
             <i class="fas fa-address-card"></i>
-            <input type="text" placeholder="CPF" />
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" required />
           </div>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email" />
+            <input type="email" id="email" name="email" placeholder="Email" required />
           </div>
           <div class="input-field">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="text" placeholder="Address" />
+            <input type="text" id="address" name="address" placeholder="Address" required />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
+            <input type="password" id="password" name="password" placeholder="Password" required />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Confirm Password" />
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"
+              required />
           </div>
 
           <label style="color: white;">
