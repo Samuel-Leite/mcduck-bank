@@ -21,42 +21,36 @@
         <div class="panel left-panel">
           <div class="content">
             <h3>Create your McDuck Bank Account</h3>
-            <p>
-              Welcome to McDuck Bank! Join us today to manage your finances effortlessly and securely.
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
+            <p>Welcome to McDuck Bank! Join us today to manage your finances effortlessly and securely.</p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
           </div>
         </div>
         <div class="panel right-panel">
           <div class="content">
             <h3>Already have an account?</h3>
-            <p>
-              Welcome back to McDuck Bank! Log in to securely manage your finances and enjoy our banking services.
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
+            <p>Welcome back to McDuck Bank! Log in to securely manage your finances and enjoy our banking services.</p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
           </div>
         </div>
       </div>
 
       <div class="signin-signup">
-        <form action="#" class="sign-in-form">
+        <form id="sign-in-form" class="sign-in-form">
           <h2 class="title">Sign in</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
+            <input type="text" id="login-username" name="login-username" placeholder="Username" required />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
+            <input type="password" id="login-password" name="login-password" placeholder="Password" required />
           </div>
           <input type="submit" value="Login" class="btn solid" />
-          <input type="button" value="Back Home" class="btn solid" onclick="location.href='../index.html';" />
+          <input type="button" value="Back Home" class="btn solid back-home-btn"
+            onclick="location.href='../index.html';" />
         </form>
-        <form id="sign-up-form" action="http://localhost:3000/auth/signup" method="POST" class="sign-up-form">
+
+        <form id="sign-up-form" class="sign-up-form">
           <h2 class="title">Sign up</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
@@ -83,20 +77,18 @@
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"
               required />
           </div>
-
           <label style="color: white;">
             <input type="checkbox" required />
             I accept the <a href="#" style="color: white;">terms and conditions</a>.
           </label>
-
           <input type="submit" class="btn" value="Sign up" />
         </form>
-
       </div>
     </div>
   </div>
 
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
